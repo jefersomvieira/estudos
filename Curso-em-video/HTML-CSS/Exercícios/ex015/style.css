@@ -1,0 +1,13 @@
+@charset "UTF-8";
+body{
+    background-color: yellowgreen;
+}
+h1{
+    color: darkblue;
+    background-color: darkgreen;
+}
+h2{
+    color: darkred;
+    background-color:darkorange;
+    text-align: right;
+}
