@@ -9,14 +9,30 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
-        thead, tfoot{
-            background-color: gray;
-            color: white;
+        
+        caption{
+            font-size: 2em;
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+            border-bottom: 0px;
+            font-weight: bolder;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: darkgray;
         }
         table{
             border-collapse: collapse;
             width: 500px;
+            position: relative;
         }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }/*
+        use essas config somente com sua tabela com posição relative e somente no cabeçalho (obs: não funciona em todos os navegadores então use com moderação)
+        */
         td, th{
             border: 2px solid black;
             padding: 10px;  
@@ -24,23 +40,36 @@
         td.num{
             text-align: right;
         }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <h1>tabelas grandes</h1>
     <!--
         ANATOMIA PARA TABELAS GRANDES
-
+        CAPTION
         TABLE
             THEAD
             TBODY
             TFOOT
     -->
+    <!--
+        th e para titulo ou para informar sobre oque são os dados
+        td sao os dados 
+        todo de th use o scopo
+    -->
+    <!--
+         para usar o modo zebrado use o camando tbody > tr:ntr-child(2n (ou even:par ou odd:impar))
+    -->
 <table>
+    <caption>População das Unidades Federativas</caption>
     <thead>
         <tr>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
         </tr>
     </thead>
     <tbody>
@@ -155,7 +184,7 @@
     </tbody>
     <tfoot>
         <tr>
-            <th>População total</th>
+            <th scope="row">População total</th>
             <td><strong>210.147.125</strong></td>
         </tr>
     </tfoot>
