@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Meu primeiro formulario</h1>
+    <!--Metodos:
+        GET=usar somente quando forem dados não senciveis ex:nome, idade, peso, altura e etc...
+        POST= o contrario do anterios ex: senhas, cartão de credito dados pessoais e tambem se for acima de 3 mil bites ou envio de arquivos-->
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <!--esse formulario esta feito da maniera mais basica possivel pois falta muito parametro
+        para desligar todos as caixas use o comando na tag form ou individualmente no inout desejado-->
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
