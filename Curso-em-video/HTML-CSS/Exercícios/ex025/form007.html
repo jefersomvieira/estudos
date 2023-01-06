@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <fieldset>
+        <legend></legend>
+        <form action="cadastro.php" method="post">
+            <p>
+                <label for="iest">Estado</label>
+                <select name="estado" id="iest">
+                        <optgroup label="Região Sul">
+                            <option value="RS">Rio grande do sul</option>
+                            <option value="SC">santa catarina</option>
+                            <option value="PR">parana</option>
+                        </optgroup>
+                    <optgroup label="Região Sudeste">
+                        <option value="SP">sao paulo</option>
+                        <option value="RJ">rio de janeiro</option>
+                        <option value="MG">minas gerais</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="ADM">administração</option>
+                    <option value="CONT">Contabilidade</option>
+                    <option value="DEV">Desenvolvedor</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="imsg">Mensagem:</label><br>
+                <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="deixe sua mensagen"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </fieldset>
+</body>
+</html>
