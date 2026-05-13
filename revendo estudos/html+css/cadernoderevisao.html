@@ -49,8 +49,35 @@
             <img src="./imagens/foto.png" alt="foto de exemplo" width="100px">
             <img src="https://plus.unsplash.com/premium_photo-1683120966127-14162cdd0935?q=80&w=363&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="foto de exemplo" width="100px">
             </p>
-            <p>trabalhando com imagens cuidado pois existem varios tamanhos de telas diferentes ex. celular, tablets, monitores enfim </p>
-            <p>usando imagens use a 'tag' &lt;picture&gt; e encima disso a 'tag' &lt;source media="(max-width:tamanho maximo )" srcset="localização do arquivo" type="image/png ou jpg"&gt; lembrando cuidado com a ordem das imagens
+            <p>trabalhando com imagens cuidado pois existem varios tamanhos de telas diferentes ex. celular, tablets, monitores enfim. </p>
+            <p>usando imagens use a 'tag' &lt;picture&gt; e encima disso a 'tag' &lt;source media="(max-width:tamanho maximo )" srcset="localização do arquivo" type="image/png ou jpg"&gt; lembrando cuidado com a ordem das imagens.</p>
+            <p>usando audios seguem as regras da imagens CUIDADO com direitos autorais e tamanho dos aquivos a serem carregados.</p>
+            <!--metodos comuns para usar audio-->
+            <!--maneira simples mas pouco eficaz-->
+            <audio src="media/teste-audio.mp3"controls autoplay></audio>
+            <!--
+            nunca esqueça os direitos auttorais
+            e a ordem do carregamento dos arquivos
+            -->
+            <audio controls loop preload="metadata">
+                <source src="media/teste-audio.mp3" type="audio/mpeg">
+                <source src="media/teste-audio.ogg" type="audio/ogg">
+                <source src="media/teste-audio.wav" type="audio/wav">
+            <p>infelismente seu navegador não conseguiu carregar o(s) arquivos. <a href="media/teste-audio.mp3">click aqui para baixar.</a></p>
+            </audio>
+            <p>NUNCA esqueça de configurar os audios com parametros certos </p>
+            <p>quando for usar videos CUIDADO, hospedar no seu proprio site você usa muito trafego de bando e isso pode ficar muito caro para seu cliente, então explique isso para evitar problemas.</p>
+            <p>
+                <!--essa é a maneira simples (não recomendo)-->
+                <video width="500" height="500" controls poster="imagens/capa-cerveja.jpg">
+                <source src="media/meu-video.mp4" type="video/mp4">
+                <source src="media/Meu-Video.m4v" type="video/mp4">
+                <p>Seu navegador não tem compatibilidade com esse video.</p>
+                </video>
+            <!--essa é a maneira mais viavel de trabalahar com videos-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Sp2nxlrQ89w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+            <p><strong>De uma maneira resumida é assim que usa midias no seu site. Lembrando cuidado com tamanhos e formatos, pois isso interfere direto na navegação do seu site, quanto mais fluida e limpa for a navegação mais agradavel fica seu site. 
+            </strong></p>
         </article>
     </section>
 
