@@ -1,0 +1,30 @@
+Esse arquivo e minha linha de raciocínio na hora de pensar sobe o projeto em como imaginar layout, core, letras enfim.
+Pedi pro meu amigo Chatgpt criar 10 exercícios de landing pages para praticar HTML e CSS o 1° desafio foi criar uma landing page básica (sem animações,hover apenas para treinar)de uma cafeteria as instruções foram e 
+
+HEADER
+--------------------------------
+LOGO         HOME SOBRE CONTATO
+--------------------------------
+
+MAIN
+--------------------------------
+IMAGEM        TITULO
+               TEXTO
+             BOTÃO
+-------------------------------- 
+isso é o básico nas minhas pesquisa sobre cafeteria fui atrás de alguns exemplos citado no arquivo cafetiria.jpg com essa ‘base’ fui atrás das corres sendo a principal o marrom porque todas as paginas que eu vi de exemplos tinha como cor predominante marrom. Então com isso fui no site adobe color para criar uma palheta com um bom contraste e obtive essa:
+
+cor1 = #672B00;
+cor2 = #331B0A;
+cor3 = #CC8552;
+cor4 =  #FFC499;
+cor5 = #FFE1CC;
+
+usando google fonts tambem escolhi 3 fonts que me agradaram, sendo elas
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+depois disso fui atrás de mais 2 coisas uma imagem de fundo que passe a ideia de cafeteria moderna, como mostra o arquivo imagem-fundo.jpg após isso fui atrás do logo achei um muito interessante porem ele era um arquivo muito grande então usei uma ferramenta parar comprimir um pouco pode ver a diferença nos arquivos logo.png para o arquivo logo2.png
+
+todos os outros desafios vou seguir o mesmo pensando 
