@@ -46,24 +46,29 @@ h1{
     font-size: 35px;
     font-weight: 900;
     display: inline-flex;
-    color: var(--cor1);
+    color: var(--cor4);
     height: 50px;
-    text-shadow: 2px 2px 2px var(--cor3);
+    text-shadow: 2px 2px 2px var(--cor2);
 }
  nav{
     display: inline-block;
-    width:30vw;
-    height: 10vh;
+    width:400px;
+    height: 50px;
+    margin-right: 20px;
+    
 }
 ul{
-    height: 100%;
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
-    align-items:center;
-    padding-right: 10px;
+    text-align:center;
+    
     
 }
 li{
+    width: 70px;
+    padding: 5px;
+    border-radius: 10px;
     list-style-type: none;
     text-decoration: none;
 }
@@ -71,6 +76,14 @@ a{
     text-decoration: none;
     color: var(--cor4);
     text-shadow: 3px 0px 3px var(--cor2);
+}
+li a:hover{
+    margin-left: -5px;
+    width: 90px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #CC8552;
+    color: #331B0A;
 }
 main{
     width: 100%;
@@ -80,7 +93,7 @@ main{
 }
 .slogan{
     height: 80vh;
-    width: 50vw;
+    width: 1000px;
     flex-direction: column;
     display: flex;
     justify-content: space-between;
@@ -89,34 +102,46 @@ h2{
     font-family: "Changa One", sans-serif;
     font-weight: 800;
     font-size: 40px;
-    color: var(--cor3);  
-    text-align: center;
-    text-shadow: 3px 3px 3px var(--cor2);
+    text-indent: 15px;
+    color: var(--cor5);  
+    text-align: start;
+    text-shadow: 3px 8px 8px var(--cor2);
     height: 40vh;
     display: flex;
     align-items: center;
 }
 p{
     font-family: "Roboto Slab", serif;
-    color: var(--cor3);
+    color: var(--cor5);
     text-shadow: 2px 2px 2px var(--cor2);
-    text-align: center;
+    text-align: left;
+    text-indent: 10px;
     font-size: 20px;
     display: flex;
-    align-items: center;
     height: 30vh;
+    width: 350px;
+    margin-bottom: 50px;
 }
 
-.btn{
-    background-color:var(--cor3);
-    height: 10vh;
+.btn {
+    background-color:#672B00;
+    height: 50px;
     font-family: "Changa One", sans-serif; 
     font-size: 25px;  
     color: var(--cor4);
-    width: 20vw;
+    width: 300px;
     border-radius: 15px;
-    align-self: flex-end;
+    align-self: flex-start;
     box-shadow: 2px 5px 5px var(--cor5);
+    margin-left: 50px;
+}
+.btn:hover{
+    background-color: #CC8552;
+}
+
+.btn>a:hover{
+    color:#331B0a;
+    text-shadow: 3px 5px 8px #CC8552;
 }
 article{
     display: flex;
@@ -125,18 +150,25 @@ article{
     align-items: end;
 }
 .promocao{
-    height: 40vh;
-    width: 15vw;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: #ffc4992c;
+    box-shadow: 5px 5px 5px var();
+    height: 400px;
+    width: 300px;
     flex-direction: column;
     display: flex;
-    align-items: end;
+    align-items: start;
     
 }
 .oferta{
+    
     list-style-type: disc;
+    width: 150px;
     font-family:"Roboto Slab", serif;
     font-size: 20px;
     font-weight: 800;
-    color: #FFC499;
+    color:var(--cor2);
     text-shadow: 4px 4px 4px var(--cor2);
+    background-color: #ffc4994d;
 }
