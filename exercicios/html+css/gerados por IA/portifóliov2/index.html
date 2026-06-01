@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio | Estudante de tecnologias</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ícones modernos -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <!-- Cabeçalho / Navigation -->
+    <header class="navbar">
+        <div class="logo">Jeferson Vieira<span>.</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#portfolio">Projetos</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <button class="btn-contact" onclick="location.href='#contact'">Contratar</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1> Desenvolvedor Front-End em formação. <br /><span class="highlight">HTML CSS JavaScript</span>.</h1>
+            <p>Atualmente estudando desenvolvimento web e construindo projetos práticos para consolidar conhecimentos em front-end.</p>
+            <div class="hero-btns">
+                <a href="#portfolio" class="btn-primary">Ver Trabalhos</a>
+                <a href="#contact" class="btn-secondary">Vamos conversar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="section-header">
+            <h2>Projetos em Destaque</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="ui">Projeto loja</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+            </div>
+        </div>
+
+        <div class="portfolio-grid">
+            <!-- Projeto 1 -->
+            <div class="portfolio-item" data-category="ui">
+                <div class="item-image" style="background-color: #2a2d34;"><img src="img/techclub.png" alt="print do projeto"></div>
+                <div class="item-info">
+                    <h3>DevTech store loja de artigos eletronicos</h3>
+                    <p>Uma pagina simples feita em html, css e javascript</p>
+                    <a class="btn-acesso" href="https://jefersomvieira.github.io/projeto-loja/" rel="external" target="_blank">Visitar Projeto</a>
+                </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="portfolio-item" data-category="branding">
+                <div class="item-image" style="background-color: #3b3f46;"></div>
+                <div class="item-info">
+                    <h3>Identidade Visual Nova</h3>
+                    <p>Branding • Design Gráfico</p>
+                </div>
+            </div>
+            <!-- Projeto 3 -->
+            <div class="portfolio-item" data-category="web">
+                <div class="item-image" style="background-color: #1e2229;"></div>
+                <div class="item-info">
+                    <h3>E-commerce Minimalista</h3>
+                    <p>Web Design • Desenvolvimento</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>Estudante por Hobby e apaixonado por tecnologia.</h2>
+                <p>Buscando conhecimento na área de tecnologia e navegando na imensidão Internet comecei a me apaixonar pelo que descobri com isso fiz alguns cursos </p>
+                <div class="skills-tags">
+                    <span>Linux</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Pronto para iniciar seu projeto?</h2>
+        <p>Estou disponível para projetos freelance...</p>
+        <a href="mailto:jefersomvieiralima@gmail.com" class="email-link">jefersomvieiralima@gmail.com</a>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-behance"></i></a>
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy;2026 Jeferson Vieira . projeto simples e limpo.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
