@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Landing Pages - Avançado</title>
+    <link rel="stylesheet" href="style-index.css">
+</head>
+<body>
+
+    <!-- PAINEL DE CONTROLE -->
+    <div id="painel-controle">
+        <div class="campo">
+            <label>Estilo do Design</label>
+            <select id="estilo">
+                <option value="moderno">Moderno (Arredondado & Sans)</option>
+                <option value="classico">Clássico (Reto, Elegante & Serif)</option>
+                <option value="minimalista">Minimalista (Limpo & Clean)</option>
+                <option value="energico">Energético (Bold & Colorido)</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label>Tipo de Página</label>
+            <select id="orientacao">
+                <option value="loja de tenis">Loja de Tênis</option>
+                <option value="advocacia">Advocacia</option>
+                <option value="saude">Clínica de Saúde</option>
+                <option value="agencia">Agência de Publicidade</option>
+                <option value="ecommerce">E-commerce</option>
+                <option value="padrao">Padrão (Genérico)</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label>Paleta de Cores</label>
+            <div class="cores-picker">
+                <input type="color" id="cor1" value="#ffffff" title="Cor de Fundo">
+                <input type="color" id="cor2" value="#1e293b" title="Cor do Texto">
+                <input type="color" id="cor3" value="#ff4500" title="Cor do Botão/Detalhes">
+            </div>
+        </div>
+
+        <button class="btn" onclick="gerarLayout(true)">Gerar Layout</button>
+        <button class="btn" id="btn-novo-layout" onclick="gerarLayout(false)" style="background-color: #ec4899; display: none;">Novo Layout</button>
+        <button class="btn btn-secundario" id="btn-alternar" onclick="alternarVisao()">Ver Código</button>
+        <button class="btn btn-acao" id="btn-abrir-aba" onclick="abrirEmAba()">Abrir em Aba</button>
+        <button class="btn btn-acao" id="btn-download" onclick="baixarCodigo()">Baixar HTML + CSS</button>
+    </div>
+
+    <!-- ÁREA PRINCIPAL -->
+    <div id="conteudo-principal">
+        <div id="preview-container">
+            <div class="lp-body" id="lp-render">
+                <div class="lp-wrapper">
+                    <div class="lp-logo">[SUA LOGO]</div>
+                    <h1 class="lp-titulo">Preencha os campos acima e clique em Gerar</h1>
+                    <p class="lp-sub">O sistema vai estruturar a página no estilo e cores escolhidos.</p>
+                    <button class="lp-cta">[BOTÃO DE AÇÃO]</button>
+                    <div class="lp-img-placeholder">[SUA IMAGEM AQUI]</div>
+                </div>
+            </div>
+        </div>
+        <pre id="codigo-container"></pre>
+    </div>
+
+    <script src="script-index.js"></script>
+</body>
+</html>
