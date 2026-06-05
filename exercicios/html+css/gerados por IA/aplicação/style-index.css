@@ -257,6 +257,126 @@ body {
     }
 }
 
+/* --- ESTILOS DO HEADER --- */
+.lp-header {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid var(--cor-primaria);
+    animation: slideDown 0.5s ease-out;
+}
+
+.lp-header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.lp-header-logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--cor-primaria);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    min-width: fit-content;
+    font-family: var(--font-layout);
+}
+
+.lp-header-nav {
+    display: flex;
+    gap: 30px;
+    flex: 1;
+    justify-content: center;
+}
+
+.lp-nav-link {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: 500;
+    font-family: var(--font-layout);
+    transition: all 0.3s ease;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.lp-nav-link:hover {
+    color: var(--cor-primaria);
+}
+
+.lp-nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--cor-primaria);
+    transition: width 0.3s ease;
+}
+
+.lp-nav-link:hover::after {
+    width: 100%;
+}
+
+.lp-header-cta {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
+    border: none;
+    padding: 10px 25px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: var(--radius-layout);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--font-layout);
+    white-space: nowrap;
+}
+
+.lp-header-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.lp-header-cta:active {
+    transform: translateY(0);
+}
+
+/* Responsivo para Mobile */
+@media (max-width: 768px) {
+    .lp-header-container {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 12px 15px;
+    }
+
+    .lp-header-nav {
+        gap: 15px;
+        order: 3;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .lp-nav-link {
+        font-size: 14px;
+    }
+
+    .lp-header-logo {
+        font-size: 18px;
+    }
+
+    .lp-header-cta {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}
+
 /* --- CSS INJETADO DINAMICAMENTE NA LANDING PAGE --- */
 #preview-container {
     --cor-fundo: #ffffff;
@@ -271,7 +391,7 @@ body {
     background-color: var(--cor-fundo); 
     color: var(--cor-texto); 
     font-family: var(--font-layout); 
-    padding: 80px 20px; 
+    padding: 60px 20px 80px 20px; 
     min-height: 100%; 
     transition: all 0.4s ease; 
 }
@@ -670,5 +790,116 @@ body {
 
     .lp-sub {
         font-size: 1rem;
+    }
+}
+
+/* --- ESTILOS PARA NOVOS LAYOUTS --- */
+
+/* Estatísticas */
+.lp-stat-card {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: var(--radius-layout);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    animation: slideInFromBottom 0.6s ease-out;
+    transition: all 0.3s ease;
+}
+
+.lp-stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.04);
+}
+
+/* Depoimentos */
+.lp-testimonial-card {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: var(--radius-layout);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    animation: slideInFromBottom 0.6s ease-out;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.lp-testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* Preços */
+.lp-pricing-card {
+    transition: all 0.3s ease;
+    animation: scaleUp 0.6s ease-out;
+}
+
+.lp-pricing-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.lp-pricing-card button {
+    transition: all 0.3s ease;
+}
+
+.lp-pricing-card button:hover {
+    transform: scale(1.05);
+}
+
+/* FAQ */
+.lp-faq-item {
+    transition: all 0.3s ease;
+    animation: slideInFromLeft 0.6s ease-out;
+}
+
+.lp-faq-item:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-color: var(--cor-primaria);
+}
+
+.lp-faq-item div {
+    transition: all 0.3s ease;
+}
+
+.lp-faq-item:hover div {
+    color: var(--cor-primaria);
+}
+
+/* Time/Equipe */
+.lp-team-card {
+    animation: slideInFromBottom 0.6s ease-out;
+    transition: all 0.3s ease;
+}
+
+.lp-team-card:hover {
+    transform: translateY(-10px);
+}
+
+.lp-team-card div:first-of-type {
+    transition: all 0.3s ease;
+}
+
+.lp-team-card:hover div:first-of-type {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Footer */
+.lp-footer-section {
+    animation: slideInFromBottom 0.8s ease-out 0.5s backwards;
+}
+
+/* Responsivo para Preços em Mobile */
+@media (max-width: 768px) {
+    div[style*="grid-template-columns: repeat(3, 1fr)"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    div[style*="grid-template-columns: repeat(4, 1fr)"] {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .lp-pricing-card {
+        transform: scale(1) !important;
     }
 }
