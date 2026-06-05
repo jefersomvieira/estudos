@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 4</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando Troco</h1>
+    <button class="btn">Comprar produto</button>
+    <script>
+        var btn = document.querySelector('.btn');
+        btn.addEventListener('click', function() {
+            nome = prompt('Digite o nome do produto:');
+            preco = parseFloat(prompt('Digite o preço do produto:'));
+            valorPago = parseFloat(prompt('Digite o valor pago:'));
+            alert('Você comprou ' + nome + ' por R$' + preco.toFixed(2) + '. O valor pago foi R$' + valorPago.toFixed(2) + '. O troco é R$' + (valorPago - preco).toFixed(2));
+        });
+    </script>
+</body>
+</html>

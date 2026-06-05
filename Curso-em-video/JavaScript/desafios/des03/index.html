@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio 3</h1>
+    <button class="btn">Antes e depois</button>
+    <script>
+        var btn = document.querySelector('.btn');
+        btn.addEventListener('click', function() {
+            num = prompt('Digite um número inteiro qualquer:');
+            alert('O antecessor de ' + num + ' é ' + (parseInt(num) - 1) + ' e o sucessor é ' + (parseInt(num) + 1));
+        });
+    </script>
+</body>
+</html>

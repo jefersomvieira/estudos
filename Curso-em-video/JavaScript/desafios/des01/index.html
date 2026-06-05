@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 desafio</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio das mensagens</h1>
+    <button class="op1">Click me!</button>
+    <button class="op2">Click me too!</button>
+    <button class="op3">Click me three!</button>
+
+
+    <script>
+        var op1 = document.querySelector('.op1');
+        var op2 = document.querySelector('.op2');
+        var op3 = document.querySelector('.op3');
+
+        op1.addEventListener('click', function(){
+            alert('Você clicou no primeiro botão!');
+        });
+        op2.addEventListener('click', function(){
+            alert('Você clicou no segundo botão!');
+        });
+        op3.addEventListener('click', function(){
+            alert('Você clicou no terceiro botão!');
+        });
+    </script>
+</body>
+</html>

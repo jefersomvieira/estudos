@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio05</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor de Medidas</h1>
+    <button class="btn">converter</button>
+
+    <script>
+        const btn = document.querySelector('.btn');
+
+        btn.addEventListener('click', () => {
+            const metros = prompt('Digite a medida em metros:');
+            
+            alert('A distancia de ' +metros+ ' metros,corresponde a...' + '\n' + parseFloat(metros/1000).toFixed(3) + ' quilometros' + '\n'
+            + parseFloat(metros/100).toFixed(3) + ' hectometros' + '\n'
+            + parseFloat(metros/10).toFixed(3) + ' decametros' + '\n'
+            + parseFloat(metros*10).toFixed(3) + ' decimetros' + '\n'
+            + parseFloat(metros*100).toFixed(3) + ' centimetros' + '\n'
+            + parseFloat(metros*1000).toFixed(3) + ' milimetros' 
+            );
+        });
+
+    </script>
+</body>
+</html>
