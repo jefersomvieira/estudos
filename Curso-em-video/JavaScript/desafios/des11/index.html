@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio11</title>
+</head>
+<body>
+    <h1>Ano bissexto</h1>
+    <button onclick="inicio()">Verificar</button>
+    <p id="mensagem">informe um ano para saber se ele e bissexto</p>
+    <script>
+        function inicio(){
+            let ano = prompt("Qual ano deseja verificar?");
+            if((ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0)){
+                document.getElementById("mensagem").innerHTML = "O ano " + ano + " é bissexto.";
+            } else {
+                document.getElementById("mensagem").innerHTML = "O ano " + ano + " não é bissexto.";
+            }
+        }
+    </script>
+</body>
+</html>
