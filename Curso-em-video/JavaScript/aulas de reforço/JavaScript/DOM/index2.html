@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Dom</title>
+    <style>
+        #area{
+            width:150px;
+            height: 150px;
+            background-color: green;
+            text-align: center;
+            line-height: 140px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">interaja</div>
+    <script>
+        //aqui ficou a variavel global.
+        var a = document.getElementById('area');
+        a.addEventListener('click', clicar);
+        a.addEventListener('mouseenter', entrar);
+        a.addEventListener('mouseleave', sair);
+        //essa função e chamada quando clica na div , mas nao esqueça a variavel global para acessar a div.
+        function clicar(){
+            a.innerText = 'Clicou';
+            a.style.backgroundColor = 'red';
+        }
+
+        function entrar(){
+            a.innerText = 'Entrou';
+            a.style.backgroundColor = 'blue';
+        }
+        function sair(){
+            a.innerText = 'Saiu';
+            a.style.backgroundColor = 'green';
+        }
+
+        //de uma meneira resumida para criar os eventos 1° criar a variavel global para acessar a div 2° criar os eventos usando addEventListener 3° criar as funções para cada evento.
+    </script>
+</body>
+</html>
